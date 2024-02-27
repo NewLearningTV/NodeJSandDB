@@ -1,0 +1,31 @@
+/* 참고로 ElephantSQL에서 데이터베이스 이름을 클릭하시고
+BROWSER을 클릭하시면 거기서 특별한 코드 없이 직접 SQL을 실행할 수 있습니다.
+*/
+
+/* 테이블 만드는 방법입니다 */
+CREATE TABLE employee (
+    id INT PRIMARY KEY,
+    name VARCHAR(10),
+    job VARCHAR(50),
+    main_language VARCHAR(50),
+    salary INT,
+    company_size VARCHAR(10)
+);
+
+/* 테이블에 데이터 입력하는 방법입니다 */
+INSERT INTO employee (id, name, job, main_language, salary, company_size) VALUES
+(1, 'KMJ', '프론트엔드', 'Javascript', 2902, 'small'),
+(2, 'LSY', '백엔드', 'Java', 3935, 'mid'),
+(3, 'PDY', 'iOS', 'Swift', 4860, 'large'),
+(4, 'JHY', '안드로이드', 'Kotlin', 3994, 'small'),
+(5, 'CJW', 'ML', 'Python', 5106, 'mid'),
+(6, 'PSH', '시스템 소프트웨어', 'C++', 5095, 'large'),
+(7, 'KJA', '프론트엔드', 'Javascript', 2988, 'small'),
+(8, 'LHJ', '백엔드', 'Javascript', 3520, 'mid'),
+(9, 'JMJ', 'iOS', 'Swift', 4614, 'large'),
+(10, 'CSA', '안드로이드', 'Kotlin', 2821, 'small'),
+(11, 'PJS', 'ML', 'C++', 5466, 'mid'),
+(12, 'KHE', '시스템 소프트웨어', 'C++', 5238, 'large'),
+(13, 'LDH', '프론트엔드', 'Javascript', 3130, 'small'),
+(14, 'JJW', '백엔드', 'Java', 3958, 'mid'),
+(15, 'CMS', 'iOS', 'Obj-C', 4087, 'large');
